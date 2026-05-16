@@ -1,0 +1,39 @@
+create database SQL_tutorial;
+show databases;
+use sql_tutorial;
+create table  maths(
+	sno int Primary key,
+    name varchar(20),
+    marks int
+);
+create table physics(
+	sno int Primary key,
+    name varchar(20),
+    marks int
+);
+create table chemistry(
+	sno int Primary key,
+    name varchar(20),
+    marks int
+);
+insert into maths values 
+(1,'Utkarsh',90),
+(2,'Harshwardhan',85),
+(3,'Divya',46),
+(4,'Sparsh',82),
+(5,'Abhinav',76);
+insert into chemistry values
+(1,'Utkarsh',87),
+(2,'Harshwardhan',66),
+(3,'Divya',94),
+(4,'Sparsh',79),
+(5,'Abhinav',28);
+insert into physics values
+(1,'Utkarsh',99),
+(2,'Harshwardhan',92),
+(3,'Divya',19),
+(4,'Sparsh',72),
+(5,'Abhinav',69);
+select * from maths;
+select * from physics;
+select * from chemistry;
